@@ -5,7 +5,7 @@ module Loaderio
     attr_accessor :api_key, :api_version, :protocol, :server
     
     #default values
-    self.api_version = "v1"
+    self.api_version = "v2"
     self.protocol    = "https"
     self.server      = "api.loader.io"
     self.api_key     = ENV["LOADERIO_API_KEY"]
