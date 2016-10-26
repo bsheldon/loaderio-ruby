@@ -3,6 +3,8 @@ module Loaderio
     extend self
         
     attr_accessor :api_key, :api_version, :protocol, :server
+
+    RestClient.log = 'stdout'
     
     #default values
     self.api_version = "v2"
