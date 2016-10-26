@@ -14,7 +14,7 @@ module Loaderio
     end
     
     def resource
-      RestClient::Resource.new(base_url, headers: {"loaderio-Auth" => api_key, content_type: :json, accept: :json })
+      RestClient::Resource.new(base_url, headers: {"loaderio-auth" => api_key, content_type: :json, accept: :json })
     end
   end
 end
